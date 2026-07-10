@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FrameLens Support</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f7f8fa; --text: #17191c; --muted: #5f6875; --panel: #ffffff; --border: #d9dde3; --accent: #1677ff; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #111418; --text: #f3f6fa; --muted: #aab3bf; --panel: #1b2027; --border: #303844; --accent: #5aa2ff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; background: var(--bg); color: var(--text); }
+    main { width: min(920px, calc(100% - 40px)); margin: 0 auto; padding: 56px 0; }
+    header { margin-bottom: 28px; }
+    h1 { margin: 0 0 8px; font-size: clamp(36px, 6vw, 56px); line-height: 1.05; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 24px; letter-spacing: 0; }
+    p { margin: 0 0 12px; }
+    a { color: var(--accent); }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+    nav a { border: 1px solid var(--border); border-radius: 999px; padding: 7px 12px; background: var(--panel); text-decoration: none; }
+    .subtitle { color: var(--muted); font-size: 20px; max-width: 720px; }
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: 28px 0; }
+    section, .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+    section { margin-top: 18px; }
+    ul { margin: 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+    .muted { color: var(--muted); }
+    footer { margin-top: 28px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>FrameLens Support</h1>
+      <p class="subtitle">A Mac screenshot utility for capturing a precise framed area in a repeatable pixel size.</p>
+      <nav aria-label="Language">
+        <a href="./">English</a>
+        <a href="./ko/">한국어</a>
+        <a href="./fr/">Français</a>
+        <a href="./de/">Deutsch</a>
+        <a href="./it/">Italiano</a>
+        <a href="./ja/">日本語</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>For support, questions, or feedback, contact:</p>
+        <p><a href="mailto:g4553321@gmail.com">g4553321@gmail.com</a></p>
+        <p class="muted">Please include your macOS version and the app version when reporting an issue.</p>
+      </div>
+
+      <div class="card">
+        <h2>Supported Languages</h2>
+        <ul>
+          <li>Korean</li>
+          <li>English</li>
+          <li>French</li>
+          <li>German</li>
+          <li>Italian</li>
+          <li>Japanese</li>
+        </ul>
+      </div>
+    </div>
+
+    <section>
+      <h2>How FrameLens Works</h2>
+      <p>FrameLens places a movable transparent capture frame over your Mac screen. Move or resize the frame, choose an image format and save folder, then capture the framed area using the capture button or a global shortcut.</p>
+      <ul>
+        <li>Capture exact pixel sizes such as 1280 x 800, 1440 x 900, 2560 x 1600, and custom sizes.</li>
+        <li>Save as PNG, JPEG, or HEIC.</li>
+        <li>Customize filename rules and save folder presets.</li>
+        <li>Use global shortcuts to capture or show and hide the frame.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Screen Recording Permission</h2>
+      <p>macOS requires Screen Recording permission for any app that captures screen content. FrameLens uses this permission only when you trigger a screenshot. It does not record video, monitor your screen in the background, or upload captured images.</p>
+      <p>To grant permission, open System Settings &gt; Privacy &amp; Security &gt; Screen &amp; System Audio Recording, then allow FrameLens. You may need to quit and reopen the app after changing the permission.</p>
+    </section>
+
+    <section>
+      <h2>Privacy Policy</h2>
+      <p>FrameLens does not collect, store, sell, analyze, or transmit personal data.</p>
+      <ul>
+        <li>Screenshots are saved locally in the app's sandbox container by default, or in a folder explicitly selected by the user.</li>
+        <li>Settings and presets are stored locally on the user's Mac.</li>
+        <li>No analytics or tracking SDKs are used.</li>
+        <li>No captured images are uploaded to any server.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+      <p><strong>Does FrameLens record video?</strong><br>No. FrameLens captures still images only.</p>
+      <p><strong>Can I set the exact image size?</strong><br>Yes. FrameLens uses pixel-based capture sizes and supports custom size presets.</p>
+      <p><strong>Can I change the output format?</strong><br>Yes. PNG, JPEG, and HEIC are supported.</p>
+      <p><strong>Where are screenshots saved?</strong><br>FrameLens saves screenshots locally in the app's sandbox container by default. If you choose another folder in settings, screenshots are saved to that user-selected folder.</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Sung Hyun Kim. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

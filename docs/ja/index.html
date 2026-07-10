@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FrameLens サポート</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f7f8fa; --text: #17191c; --muted: #5f6875; --panel: #ffffff; --border: #d9dde3; --accent: #1677ff; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #111418; --text: #f3f6fa; --muted: #aab3bf; --panel: #1b2027; --border: #303844; --accent: #5aa2ff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", sans-serif; line-height: 1.6; background: var(--bg); color: var(--text); }
+    main { width: min(920px, calc(100% - 40px)); margin: 0 auto; padding: 56px 0; }
+    header { margin-bottom: 28px; }
+    h1 { margin: 0 0 8px; font-size: clamp(36px, 6vw, 56px); line-height: 1.05; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 24px; letter-spacing: 0; }
+    p { margin: 0 0 12px; }
+    a { color: var(--accent); }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+    nav a { border: 1px solid var(--border); border-radius: 999px; padding: 7px 12px; background: var(--panel); text-decoration: none; }
+    .subtitle { color: var(--muted); font-size: 20px; max-width: 720px; }
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: 28px 0; }
+    section, .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+    section { margin-top: 18px; }
+    ul { margin: 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+    .muted { color: var(--muted); }
+    footer { margin-top: 28px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>FrameLens サポート</h1>
+      <p class="subtitle">再現可能なピクセルサイズで、フレーム内の画面領域を正確にキャプチャするMac用ユーティリティです。</p>
+      <nav aria-label="言語">
+        <a href="../">English</a>
+        <a href="../ko/">한국어</a>
+        <a href="../fr/">Français</a>
+        <a href="../de/">Deutsch</a>
+        <a href="../it/">Italiano</a>
+        <a href="./">日本語</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h2>お問い合わせ</h2>
+        <p>サポート、質問、フィードバックは以下までお送りください。</p>
+        <p><a href="mailto:g4553321@gmail.com">g4553321@gmail.com</a></p>
+        <p class="muted">問題を報告する際は、macOSのバージョンとアプリのバージョンを含めてください。</p>
+      </div>
+
+      <div class="card">
+        <h2>対応言語</h2>
+        <ul>
+          <li>韓国語</li>
+          <li>英語</li>
+          <li>フランス語</li>
+          <li>ドイツ語</li>
+          <li>イタリア語</li>
+          <li>日本語</li>
+        </ul>
+      </div>
+    </div>
+
+    <section>
+      <h2>FrameLensの使い方</h2>
+      <p>FrameLensは、Mac画面上に移動可能な透明キャプチャフレームを表示します。フレームを移動またはサイズ変更し、画像形式と保存先フォルダを選択して、ボタンまたはグローバルショートカットでフレーム内の領域を保存します。</p>
+      <ul>
+        <li>1280 x 800、1440 x 900、2560 x 1600、カスタムサイズなどをピクセル単位でキャプチャできます。</li>
+        <li>PNG、JPEG、HEICで保存できます。</li>
+        <li>ファイル名ルールと保存先プリセットをカスタマイズできます。</li>
+        <li>グローバルショートカットでキャプチャ、またはフレームの表示/非表示を切り替えられます。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>画面収録権限</h2>
+      <p>macOSでは、画面内容をキャプチャするアプリに画面収録権限が必要です。FrameLensは、ユーザーがスクリーンショットを実行したときだけこの権限を使用します。動画録画、バックグラウンドでの画面監視、キャプチャ画像のアップロードは行いません。</p>
+      <p>権限を許可するには、システム設定 &gt; プライバシーとセキュリティ &gt; 画面とシステムオーディオ録音を開き、FrameLensを許可してください。変更後にアプリの再起動が必要な場合があります。</p>
+    </section>
+
+    <section>
+      <h2>プライバシーポリシー</h2>
+      <p>FrameLensは個人データを収集、保存、販売、分析、送信しません。</p>
+      <ul>
+        <li>スクリーンショットはデフォルトでアプリのサンドボックスコンテナにローカル保存されます。ユーザーが明示的に別のフォルダを選択した場合は、そのフォルダに保存されます。</li>
+        <li>設定とプリセットはユーザーのMacにローカル保存されます。</li>
+        <li>分析ツールやトラッキングSDKは使用しません。</li>
+        <li>キャプチャ画像をサーバーへアップロードしません。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+      <p><strong>FrameLensは動画を録画しますか？</strong><br>いいえ。FrameLensは静止画像のみをキャプチャします。</p>
+      <p><strong>正確な画像サイズを指定できますか？</strong><br>はい。ピクセル単位のキャプチャサイズとカスタムプリセットに対応しています。</p>
+      <p><strong>出力形式を変更できますか？</strong><br>はい。PNG、JPEG、HEICに対応しています。</p>
+      <p><strong>スクリーンショットはどこに保存されますか？</strong><br>デフォルトではアプリのサンドボックスコンテナにローカル保存されます。設定で別のフォルダを選択した場合は、ユーザーが選択したフォルダに保存されます。</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Sung Hyun Kim. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

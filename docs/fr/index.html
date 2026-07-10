@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assistance FrameLens</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f7f8fa; --text: #17191c; --muted: #5f6875; --panel: #ffffff; --border: #d9dde3; --accent: #1677ff; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #111418; --text: #f3f6fa; --muted: #aab3bf; --panel: #1b2027; --border: #303844; --accent: #5aa2ff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; background: var(--bg); color: var(--text); }
+    main { width: min(920px, calc(100% - 40px)); margin: 0 auto; padding: 56px 0; }
+    header { margin-bottom: 28px; }
+    h1 { margin: 0 0 8px; font-size: clamp(36px, 6vw, 56px); line-height: 1.05; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 24px; letter-spacing: 0; }
+    p { margin: 0 0 12px; }
+    a { color: var(--accent); }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+    nav a { border: 1px solid var(--border); border-radius: 999px; padding: 7px 12px; background: var(--panel); text-decoration: none; }
+    .subtitle { color: var(--muted); font-size: 20px; max-width: 720px; }
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: 28px 0; }
+    section, .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+    section { margin-top: 18px; }
+    ul { margin: 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+    .muted { color: var(--muted); }
+    footer { margin-top: 28px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Assistance FrameLens</h1>
+      <p class="subtitle">Un utilitaire Mac pour capturer une zone cadrée précise avec une taille en pixels reproductible.</p>
+      <nav aria-label="Langue">
+        <a href="../">English</a>
+        <a href="../ko/">한국어</a>
+        <a href="./">Français</a>
+        <a href="../de/">Deutsch</a>
+        <a href="../it/">Italiano</a>
+        <a href="../ja/">日本語</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Pour obtenir de l'aide, poser une question ou envoyer un commentaire, écrivez à :</p>
+        <p><a href="mailto:g4553321@gmail.com">g4553321@gmail.com</a></p>
+        <p class="muted">Veuillez indiquer votre version de macOS et la version de l'app lors d'un signalement.</p>
+      </div>
+
+      <div class="card">
+        <h2>Langues prises en charge</h2>
+        <ul>
+          <li>Coréen</li>
+          <li>Anglais</li>
+          <li>Français</li>
+          <li>Allemand</li>
+          <li>Italien</li>
+          <li>Japonais</li>
+        </ul>
+      </div>
+    </div>
+
+    <section>
+      <h2>Fonctionnement de FrameLens</h2>
+      <p>FrameLens affiche un cadre de capture transparent et déplaçable sur l'écran de votre Mac. Déplacez ou redimensionnez le cadre, choisissez un format d'image et un dossier, puis capturez la zone cadrée avec le bouton ou un raccourci global.</p>
+      <ul>
+        <li>Capturez des tailles exactes comme 1280 x 800, 1440 x 900, 2560 x 1600 ou des tailles personnalisées.</li>
+        <li>Enregistrez en PNG, JPEG ou HEIC.</li>
+        <li>Personnalisez les règles de nom de fichier et les dossiers prédéfinis.</li>
+        <li>Utilisez des raccourcis globaux pour capturer ou afficher/masquer le cadre.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Autorisation d'enregistrement de l'écran</h2>
+      <p>macOS exige l'autorisation d'enregistrement de l'écran pour toute app qui capture le contenu de l'écran. FrameLens l'utilise uniquement lorsque vous déclenchez une capture. L'app n'enregistre pas de vidéo, ne surveille pas l'écran en arrière-plan et ne téléverse pas les images capturées.</p>
+      <p>Pour accorder l'autorisation, ouvrez Réglages Système &gt; Confidentialité et sécurité &gt; Enregistrement de l'écran et de l'audio système, puis autorisez FrameLens. Il peut être nécessaire de quitter et de rouvrir l'app.</p>
+    </section>
+
+    <section>
+      <h2>Politique de confidentialité</h2>
+      <p>FrameLens ne collecte, ne stocke, ne vend, n'analyse et ne transmet aucune donnée personnelle.</p>
+      <ul>
+        <li>Les captures sont enregistrées localement dans le conteneur sandbox de l'app par défaut, ou dans un dossier explicitement choisi par l'utilisateur.</li>
+        <li>Les réglages et préréglages sont stockés localement sur le Mac.</li>
+        <li>Aucun outil d'analyse ni SDK de suivi n'est utilisé.</li>
+        <li>Aucune image capturée n'est envoyée à un serveur.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+      <p><strong>FrameLens enregistre-t-il des vidéos ?</strong><br>Non. FrameLens capture uniquement des images fixes.</p>
+      <p><strong>Puis-je définir une taille exacte ?</strong><br>Oui. FrameLens utilise des tailles en pixels et des préréglages personnalisés.</p>
+      <p><strong>Puis-je modifier le format de sortie ?</strong><br>Oui. PNG, JPEG et HEIC sont pris en charge.</p>
+      <p><strong>Où les captures sont-elles enregistrées ?</strong><br>Dans le dossier local choisi dans les réglages.</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Sung Hyun Kim. Tous droits réservés.</p>
+    </footer>
+  </main>
+</body>
+</html>
